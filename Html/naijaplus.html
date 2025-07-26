@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Photo Gallery</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/CSS/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container justify-content-between align-items-center">
+        <button class="navbar-toggler border-0 shadow-none" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center"
+          id="navbarNav">
+          <ul class="navbar-nav justify-content-center d-flex gap-2">
+            <li class="nav-item">
+              <a class="nav-link text-black fw-normal" href="/Html/blog.html">Photonaija<i class="bi bi-camera text-success"></i> Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black fw-normal" href="">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black fw-normal" href="">Community</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-black fw-normal" href="/Html/naijaplus.html"><span class="fst-italic">Photonaija<i class="bi bi-camera text-success"></i>+</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container py-5">
+      <h2 class="text-center mb-4">
+        <span class="fst-italic fw-bold">Photonaija<i class="bi bi-camera text-success"></i>+</span>
+      </h2>
+      <div class="row g-4 my-photo-card-button">
+        <!-- Photo 1 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/culture1.png"
+              class="card-img-top"
+              alt="Photo 1"
+              onclick="openModal('/Images/Premium/culture1.png', 100000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/culture1.png', 100000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 2 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/culture2.png"
+              class="card-img-top"
+              alt="Photo 2"
+              onclick="openModal('/Images/Premium/culture2.png', 150000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/culture2.png', 150000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 3 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/culture3.png"
+              class="card-img-top"
+              alt="Photo 3"
+              onclick="openModal('/Images/Premium/culture3.png', 120000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/culture3.png', 120000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 4 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/culture4.png"
+              class="card-img-top"
+              alt="Photo 4"
+              onclick="openModal('/Images/Premium/culture4.png', 120000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/culture4.png', 120000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 5 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/culture5.png"
+              class="card-img-top"
+              alt="Photo 5"
+              onclick="openModal('/Images/Premium/culture5.png', 110000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/culture5.png', 110000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 6 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/culture6.png"
+              class="card-img-top"
+              alt="Photo 5"
+              onclick="openModal('/Images/Premium/culture6.png', 100000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/culture6.png', 100000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 7 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/kids1.png"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/kids1.png', 115000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/kids1.png', 115000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 8 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/culture7.png"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/culture7.png', 135000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/culture7.png', 135000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 9 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/culture.png"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/culture.png', 135000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/culture.png', 135000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 10 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/kids2.jpeg"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/kids2.jpeg', 135000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/kids2.jpeg', 135000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 11 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/kids3.jpeg"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/kids3.jpeg', 135000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/kids3.jpeg', 135000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 12 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/kids4.png"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/kids4.png', 130000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/kids4.png', 130000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 13 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/kids5.png"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/kids5.png', 155000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/kids5.png', 155000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 14 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/hausa.png"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/hausa.png', 150000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/hausa.png', 150000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 15 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/yoruba attire.png"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/yoruba attire.png', 280000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/yoruba attire.png', 280000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 16 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/hausa1.png"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/hausa1.png', 200000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/hausa1.png', 200000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 17 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/hausa2.png"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/hausa2.png', 200000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/hausa2.png', 200000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 18 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/hausa3.png"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/hausa3.png', 200000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/hausa3.png', 200000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 19 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/Niaja kid.png"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/Niaja kid.png', 250000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/Niaja kid.png', 250000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 20 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/Edo King.png"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/Edo King.png', 350000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/Edo King.png', 350000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 21 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/Edo Kid.png"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/Edo Kid.png', 250000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/Edo Kid.png', 250000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 22 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/Edo state .png"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/Edo state .png', 210000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/Edo state .png', 210000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 23 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/little-girl-smiling.jpg"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/little-girl-smiling.jpg', 210000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/little-girl-smiling.jpg', 210000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 24 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/9ja-black-woman.jpg"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/9ja-black-woman.jpg', 210000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/9ja-black-woman.jpg', 210000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 25 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/9ja black kid.jpg"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/9ja black kid.jpg', 210000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/9ja black kid.jpg', 210000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 26 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/little girl smiling.jpg"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/little girl smiling.jpg', 210000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/little girl smiling.jpg', 210000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 27 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/9ja kid drenched in water.jpg"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/9ja kid drenched in water.jpg', 210000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/9ja kid drenched in water.jpg', 210000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 28 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/kid smiling.jpg"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/kid smiling.jpg', 210000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/kid smiling.jpg', 210000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 29 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/culture.jpg"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/culture.jpg', 210000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/culture.jpg', 210000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 30 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/model.jpg"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/model.jpg', 210000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/model.jpg', 210000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 31 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/9ja model.jpg"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/9ja model.jpg', 210000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/9ja model.jpg', 210000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 32 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/ederly man_.jpg"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/ederly man_.jpg', 210000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/ederly man_.jpg', 210000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 33 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/Nigerian couples.png"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/Nigerian couples.png', 210000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/Nigerian couples.png', 210000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 34 -->
+        <div class="col-md-4">
+          <div class="card photo-card">
+            <img
+              src="/Images/Premium/lady.png"
+              class="card-img-top"
+              alt="Photo 6"
+              onclick="openModal('/Images/Premium/lady.png', 210000)"
+            />
+            <div class="card-body text-center">
+              <button
+                class="btn btn-success w-50"
+                onclick="openModal('/Images/Premium/lady.png', 210000)"
+              >
+                <i class="bi bi-lock fs-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="photoModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-m">
+        <div class="modal-content text-center">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close ms-auto"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <img id="modalImage" src="" class="img-fluid mb-3" alt="Preview" />
+            <p class="h5" id="modalPrice"></p>
+            <button class="btn btn-success" id="payButton">
+              <i class="bi bi-download px-5"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Back to Top-->
+    <a
+      href="#top"
+      id="backToTop"
+      class="btn btn-dark shadow rounded-circle position-fixed"
+      style="bottom: 20px; right: 20px; display: none; z-index: 9999"
+      ><i class="bi bi-chevron-up"></i
+    ></a>
+
+    <!-- Paystack -->
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="/Script/premium.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
