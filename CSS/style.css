@@ -83,9 +83,21 @@ body {
   color: #333;
 }
 
+.zoom-img {
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+.zoom-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
 .card-text {
-  font-size: 0.95rem;
-  color: #555;
+  /* font-size: 0.95rem;
+  color: #555; */
+}
+
+.featured a {
+  text-decoration: none;
 }
 
 .card-body {
@@ -111,6 +123,17 @@ body {
   max-width: 100%;
   justify-items: center;
 } */
+
+/* Modal for the links in the footer of the blog */
+.popup-box {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 
 /* photonaija logo*/
 #photo-naija a:hover {
@@ -174,12 +197,6 @@ body {
 }
 
 /* search icon */
-@media (max-width: 767.98px) {
-  .bi-search {
-    position: absolute;
-    top: 0;
-  }
-}
 
 
 /*Explore Categories Section*/
@@ -615,7 +632,6 @@ body {
 .card:hover .download-btn {
   display: block;
 }
-
 
 /* photo upload */
 .uploaded-photo {

@@ -172,7 +172,7 @@ function filterGalleryByTag(tag) {
 
 // Scroll to gallery with offset
 function scrollToGallery() {
-  const yOffset = -150; // Offset in px, adjust for header height
+  const yOffset = 200; // Offset in px, adjust for header height
   const y = gallerySection.getBoundingClientRect().top + window.scrollY + yOffset;
 
   window.scrollTo({ top: y, behavior: "smooth" });

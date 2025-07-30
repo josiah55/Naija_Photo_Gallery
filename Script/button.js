@@ -136,3 +136,24 @@ function likeImage(btn) {
   countSpan.innerText = count;
 }
 
+//footer modal
+  const contentData = {
+    about: "This website curates and shares rich collections of Nigerian cultural and historical images.",
+    history: "Founded in 2025, our platform is dedicated to preserving Nigeria’s visual heritage.",
+    press: "Featured in top Nigerian media outlets for its visual contribution to cultural awareness.",
+    contact: "Reach us via email at info@photonaija.com or on social media @photonaija."
+  };
+
+  function openPopup(type) {
+    const popupBox = document.getElementById("popupBox");
+    const popupContent = document.getElementById("popupContent");
+    popupContent.textContent = contentData[type] || "No information available.";
+    popupBox.classList.remove("d-none");
+  }
+
+  function closePopup() {
+    document.getElementById("popupBox").classList.add("d-none");
+  }
+
+
+

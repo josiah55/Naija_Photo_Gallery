@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PhotoNaija</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"/>
-    <link rel="stylesheet" href="/CSS/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/CSS/style.css">
   </head>
   <body>
     <!-- Navbar -->
@@ -67,8 +63,7 @@
       </div>
     </nav>
 
-    <div id="hamburgerPopup" class="position-fixed top-0 end-0 bg-light text-black border shadow hamburger_popup"
-     style="width: 350px; height: 50vh; display: none; z-index: 1050;">
+    <div id="hamburgerPopup" class="position-fixed top-0 end-0 bg-light text-black border shadow hamburger_popup" style="width: 350px; height: 50vh; display: none; z-index: 1050;">
   <div class="d-flex justify-content-between align-items-center mb-4">
     <h5 class="mx-4">Menu</h5>
     <button class="btn-close btn-close-black" id="closePopup"></button>
@@ -95,8 +90,7 @@
 
       <div class="col-sm-6">
         <div class="dropdown">
-          <a class="btn_dropdown nav-link nav-item dropdown-toggle text-muted" href="#" role="button"
-             data-bs-toggle="dropdown" aria-expanded="false">Templates
+          <a class="btn_dropdown nav-link nav-item dropdown-toggle text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Templates
           </a>
           <ul class="dropdown-menu border-0 shadow-sm">
             <li>
@@ -121,12 +115,9 @@
       <img src="/Images/Culture/Yoruba1.png" class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover" alt=""/>
 
       <!-- Overlay Content -->
-      <div
-        class="container h-100 d-flex flex-column justify-content-center align-items-center position-relative text-white text-center hero_text pt-5">
+      <div class="container h-100 d-flex flex-column justify-content-center align-items-center position-relative text-white text-center hero_text pt-5">
         <h1 class="display-4 fw-bold text-white pt-5">Discover Naija Through Photos</h1>
-        <p class="lead text-primary text-white fw-normal fs-3">
-          Explore culture, beauty, and stories of Naija captured in stunning visuals
-        </p>
+        <p class="lead text-primary text-white fw-normal fs-3"> Explore culture, beauty, and stories of Naija captured in stunning visuals</p>
         <a href="#explore" class="btn btn-success text-light btn-sm py-2 mt-1 fs-6 fw-bold">Explore Categories</a>
       </div>
     </section>
@@ -158,23 +149,21 @@
               </button>
             </form>
             <hr />
-            <p class="text-center" id="toggleText">
-              Don't have an account? <a href="#" id="toggleAuth">Signup here</a>
+            <p class="text-center" id="toggleText"> Don't have an account? <a href="#" id="toggleAuth">Signup here</a>
             </p>
           </div>
         </div>
       </div>
     </div>
 
+    <!--search bar-->
     <div class="container mt-3 position-relative">
-       <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-4 text-muted"></i>
-
-      <!--search bar-->
       <form class="d-flex mx-auto">
-        <input id="gallerySearchInput" class="form-control ps-5"
-          type="search" placeholder="Search photos..."/>
+        <input id="gallerySearchInput" class="form-control ps-2"
+          type="search" placeholder="🔍 Search photos..."/>
         <button id="gallerySearchBtn" type="button" class="btn btn-success mx-2 border-0">Search</button>
       </form>
+
       <p id="noResultsMessage" style="display: none; color: red; font-weight: bold;">
         No results found.
       </p>
@@ -186,18 +175,6 @@
       <div class="d-flex flex-wrap justify-content-center gap-2">
       <button class="btn btn-outline-success filter-btn" data-tag="all">
         All
-      </button>
-
-      <button class="btn btn-outline-success filter-btn" data-tag="igbo">
-        Igbo
-      </button>
-
-      <button class="btn btn-outline-success filter-btn" data-tag="yoruba">
-        Yoruba
-      </button>
-
-      <button class="btn btn-outline-success filter-btn" data-tag="hausa">
-        Hausa
       </button>
 
       <button class="btn btn-outline-success filter-btn" data-tag="culture">
@@ -235,10 +212,116 @@
     </div>
 
     <div class="container" id="gallerySection">
-      <!-- CULTURE -->  <!--IGBO-->
+      <!-- CULTURE -->  
       <h3 id="culture" class="category-title">🧭 Culture</h3>
       <div class="row g-4">
-        <!--1-->
+
+        <!--EDO-->
+        <div class="col-md-4 gallery-item" data-tags="culture edo">
+          <div class="img-container">
+            <img src="/Images/Culture/Oba of Benin.jpg" data-full="/Images/Culture/Oba of Benin.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Benin culture"/>
+            <a href="/Images/Culture/Oba of Benin.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Oba Of Benin</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="culture edo">
+          <div class="img-container">
+            <img src="/Images/Culture/Benin Culture.jpg" data-full="/Images/Culture/Benin Culture.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Benin culture"/>
+            <a href="/Images/Culture/Benin Culture.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Benin Cultural Attire</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="culture edo">
+          <div class="img-container">
+            <img src="/Images/Culture/Benin Traditional Attire.jpg" data-full="/Images/Culture/Benin Traditional Attire.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Benin culture"/>
+            <a href="/Images/Culture/Benin Traditional Attire.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Benin Cultural Attire</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="culture edo">
+          <div class="img-container">
+            <img src="/Images/Culture/Benin Traditional Attire1.jpg" data-full="/Images/Culture/Benin Traditional Attire1.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Benin culture"/>
+            <a href="/Images/Culture/Benin Traditional Attire1.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Cultural Attire</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="culture edo">
+          <div class="img-container">
+            <img src="/Images/Culture/Benin Traditional Attire2.jpg" data-full="/Images/Culture/Benin Traditional Attire2.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Benin culture"/>
+            <a href="/Images/Culture/Benin Traditional Attire2.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Benin Cultural Attire</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="culture edo">
+          <div class="img-container">
+            <img src="/Images/Culture/Benin Traditional Attire3.jpg" data-full="/Images/Culture/Benin Traditional Attire3.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Benin culture"/>
+            <a href="/Images/Culture/Benin Traditional Attire3.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Benin Cultural Attire</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="culture edo">
+          <div class="img-container">
+            <img src="/Images/Culture/Benin Traditional Attire4.jpg" data-full="/Images/Culture/Benin Traditional Attire4.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Benin culture"/>
+            <a href="/Images/Culture/Benin Traditional Attire4.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Benin Cultural Attire</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="culture edo">
+          <div class="img-container">
+            <img src="/Images/Culture/Benin Traditional Attire5.jpg" data-full="/Images/Culture/Benin Traditional Attire5.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Benin culture"/>
+            <a href="/Images/Culture/Benin Traditional Attire5.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Cultural Attire</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="culture edo">
+          <div class="img-container">
+            <img src="/Images/Culture/Benin Traditional Attire6.jpg" data-full="/Images/Culture/Benin Traditional Attire6.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Benin culture"/>
+            <a href="/Images/Culture/Benin Traditional Attire6.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Cultural Attire</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="culture edo">
+          <div class="img-container">
+            <img src="/Images/Culture/Benin Traditional Attire7.jpg" data-full="/Images/Culture/Benin Traditional Attire7.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Benin culture"/>
+            <a href="/Images/Culture/Benin Traditional Attire7.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Benin Cultural Attire</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="culture edo">
+          <div class="img-container">
+            <img src="/Images/Culture/Benin Traditional Attire8.jpg" data-full="/Images/Culture/Benin Traditional Attire8.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Benin culture"/>
+            <a href="/Images/Culture/Benin Traditional Attire8.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Benin Cultural Attire</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="culture edo">
+          <div class="img-container">
+            <img src="/Images/Culture/Benin Traditional Attire9.jpg" data-full="/Images/Culture/Benin Traditional Attire9.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Benin culture"/>
+            <a href="/Images/Culture/Benin Traditional Attire9.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Benin Cultural Attire</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="culture edo">
+          <div class="img-container">
+            <img src="/Images/Culture/Benin Traditional Attire10.jpg" data-full="/Images/Culture/Benin Traditional Attire10.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Benin culture"/>
+            <a href="/Images/Culture/Benin Traditional Attire10.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Benin Cultural Attire</p>
+        </div>
+
+        <!--IGBO-->
         <div class="col-md-4 gallery-item" data-tags="culture igbo">
           <div class="img-container">
             <img src="/Images/Culture/Igbo cultue.png" data-full="/Images/Culture/Igbo cultue.png" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Igbo Festival"/>
@@ -285,22 +368,16 @@
         <!--5-->
         <div class="col-md-4 gallery-item" data-tags="culture igbo">
           <div class="img-container">
-            <img src="/Images/Culture/The-Traditional-Igbo-Accessories-of-the-Bride-Coral-Beads.jpg" data-full="/Images/Culture/The-Traditional-Igbo-Accessories-of-the-Bride-Coral-Beads.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal"
-            alt="Igbo Festival"/>
+            <img src="/Images/Culture/The-Traditional-Igbo-Accessories-of-the-Bride-Coral-Beads.jpg" data-full="/Images/Culture/The-Traditional-Igbo-Accessories-of-the-Bride-Coral-Beads.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Igbo Festival"/>
             <a href="/Images/Culture/The-Traditional-Igbo-Accessories-of-the-Bride-Coral-Beads.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
-          <p class="text-center mt-2">
-            Traditional Igbo Accessories Of The Bride
-          </p>
+          <p class="text-center mt-2">Traditional Igbo Accessories Of The Bride</p>
         </div>
 
         <!--6-->
         <div class="col-md-4 gallery-item" data-tags="culture igbo">
           <div class="img-container">
-            <img src="/Images/Culture/Tradtional Igbo Engagement.jpg"
-              data-full="/Images/Culture/Tradtional Igbo Engagement.jpg"
-              class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal"
-              data-bs-target="#imageModal" alt="Igbo Festival"/>
+            <img src="/Images/Culture/Tradtional Igbo Engagement.jpg" data-full="/Images/Culture/Tradtional Igbo Engagement.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Igbo Festival"/>
             <a href="/Images/Culture/Tradtional Igbo Engagement.jpg" download
               class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
@@ -321,9 +398,7 @@
         <!--8-->
         <div class="col-md-4 gallery-item" data-tags="culture igbo">
           <div class="img-container">
-            <img src="/Images/Culture/Igbo masquerade festival.png" data-full="/Images/Culture/Igbo masquerade festival.png"
-            class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal"
-            data-bs-target="#imageModal" alt="Igbo Festival"/>
+            <img src="/Images/Culture/Igbo masquerade festival.png" data-full="/Images/Culture/Igbo masquerade festival.png" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Igbo Festival"/>
             <a href="/Images/Culture/Igbo masquerade festival.png" download
             class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
@@ -353,8 +428,7 @@
         <div class="col-md-4 gallery-item" data-tags="culture igbo">
           <div class="img-container">
             <img src="/Images/Culture/culture.avif" data-full="/Images/Culture/culture.avif" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Igbo Festival"/>
-            <a href="/Images/Culture/culture.avif" download
-            class="btn btn-sm btn-success download-btn protected">Download</a>
+            <a href="/Images/Culture/culture.avif" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">Cultural Dance</p>
         </div>
@@ -557,6 +631,78 @@
           <p class="text-center mt-2">Cultural Attire</p>
         </div>
 
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="culture igbo">
+          <div class="img-container">
+            <img src="/Images/Culture/Traditional Attire_____.jpg" data-full="/Images/Culture/Traditional Attire_____.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Igbo Trad"/>
+            <a href="/Images/Culture/Traditional Attire_____.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Traditional Isi-Agu Attire</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="culture igbo">
+          <div class="img-container">
+            <img src="/Images/Culture/Culture__Igbo.jpg" data-full="/Images/Culture/Culture__Igbo.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Igbo Trad"/>
+            <a href="/Images/Culture/Culture__Igbo.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Traditional Isi-Agu Attire</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="culture igbo">
+          <div class="img-container">
+            <img src="/Images/Culture/cultral attire_____.jpg" data-full="/Images/Culture/cultral attire_____.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Igbo Trad"/>
+            <a href="/Images/Culture/cultral attire_____.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Traditional Isi-Agu Attire</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="culture igbo">
+          <div class="img-container">
+            <img src="/Images/Culture/Traditional Isi Agu Igbo Attire With Red Hat.jpg" data-full="/Images/Culture/Traditional Isi Agu Igbo Attire With Red Hat.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Igbo Trad"/>
+            <a href="/Images/Culture/Traditional Isi Agu Igbo Attire With Red Hat.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Traditional Isi-Agu Attire</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="culture igbo">
+          <div class="img-container">
+            <img src="/Images/Culture/Igbo attire___.jpg" data-full="/Images/Culture/Igbo attire___.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Igbo Trad"/>
+            <a href="/Images/Culture/Igbo attire___.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Traditional Attire</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="culture igbo">
+          <div class="img-container">
+            <img src="/Images/Culture/Igbo Wedding__.jpg" data-full="/Images/Culture/Igbo Wedding__.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Igbo Trad"/>
+            <a href="/Images/Culture/Igbo Wedding__.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Igbo Wedding</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="culture igbo">
+          <div class="img-container">
+            <img src="/Images/Culture/Igbo02.jpg" data-full="/Images/Culture/Igbo02.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Igbo Trad"/>
+            <a href="/Images/Culture/Igbo02.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Traditional Attire</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="culture igbo">
+          <div class="img-container">
+            <img src="/Images/Culture/Igbo01.jpg" data-full="/Images/Culture/Igbo01.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Igbo Trad"/>
+            <a href="/Images/Culture/Igbo01.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Isi-Agu Attire</p>
+        </div>
+
         <!--YORUBA-->
         <!--1-->
         <div class="col-md-4 gallery-item" data-tags="culture yoruba">
@@ -630,8 +776,7 @@
         <!--7-->
         <div class="col-md-4 gallery-item" data-tags="culture yoruba">
           <div class="img-container">
-            <img src="/Images/Culture/Yoruba_.jpg" data-full="/Images/Culture/Yoruba_.jpg" class="img-fluid gallery-img img-hover w-100"
-            data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yoruba Dress"/>
+            <img src="/Images/Culture/Yoruba_.jpg" data-full="/Images/Culture/Yoruba_.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yoruba Dress"/>
             <a href="/Images/Culture/Yoruba_.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">Yoruba Attire</p>
@@ -689,8 +834,7 @@
         <!---->
         <div class="col-md-4 gallery-item" data-tags="culture yoruba">
           <div class="img-container">
-            <img src="/Images/Culture/Yoruba_6.jpg" data-full="/Images/Culture/Yoruba_6.jpg" class="img-fluid gallery-img img-hover w-100"
-            data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yoruba Dress"/>
+            <img src="/Images/Culture/Yoruba_6.jpg" data-full="/Images/Culture/Yoruba_6.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yoruba Dress"/>
             <a href="/Images/Culture/Yoruba_6.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">Yoruba Attire</p>
@@ -699,8 +843,7 @@
         <!---->
         <div class="col-md-4 gallery-item" data-tags="culture yoruba">
           <div class="img-container">
-            <img src="/Images/Culture/Yoruba_7.jpg" data-full="/Images/Culture/Yoruba_7.jpg" class="img-fluid gallery-img img-hover w-100"
-            data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yoruba Dress"/>
+            <img src="/Images/Culture/Yoruba_7.jpg" data-full="/Images/Culture/Yoruba_7.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yoruba Dress"/>
             <a href="/Images/Culture/Yoruba_7.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">Yoruba Attire</p>
@@ -709,8 +852,7 @@
         <!---->
         <div class="col-md-4 gallery-item" data-tags="culture yoruba">
           <div class="img-container">
-            <img src="/Images/Culture/Yoruba_8.jpg" data-full="/Images/Culture/Yoruba_8.jpg" class="img-fluid gallery-img img-hover w-100"
-            data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yoruba Dress"/>
+            <img src="/Images/Culture/Yoruba_8.jpg" data-full="/Images/Culture/Yoruba_8.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yoruba Dress"/>
             <a href="/Images/Culture/Yoruba_8.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">Yoruba Attire</p>
@@ -1005,7 +1147,6 @@
           </div>
           <p class="text-center mt-2">Yoruba Attire</p>
         </div>
-
         
          <!---->
         <div class="col-md-4 gallery-item" data-tags="culture yoruba">
@@ -1016,7 +1157,6 @@
           </div>
           <p class="text-center mt-2">Yoruba Attire</p>
         </div>
-
         
          <!---->
         <div class="col-md-4 gallery-item" data-tags="culture yoruba">
@@ -1131,9 +1271,119 @@
         <!---->
         <div class="col-md-4 gallery-item" data-tags="culture yoruba">
           <div class="img-container">
-            <img src="" data-full="" class="img-fluid gallery-img img-hover w-100"
+            <img src="/Images/Culture/Agbada_.jpg" data-full="/Images/Culture/Agbada_.jpg" class="img-fluid gallery-img img-hover w-100"
             data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yoruba Dress"/>
-            <a href="" download class="btn btn-sm btn-success download-btn protected">Download</a>
+            <a href="/Images/Culture/Agbada_.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Aso-Oke</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="culture yoruba">
+          <div class="img-container">
+            <img src="/Images/Culture/Agbada_1.jpg" data-full="/Images/Culture/Agbada_1.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yoruba Dress"/>
+            <a href="/Images/Culture/Agbada_1.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Aso-Oke</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="culture yoruba">
+          <div class="img-container">
+            <img src="/Images/Culture/Agbada_2.jpg" data-full="/Images/Culture/Agbada_2.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yoruba Dress"/>
+            <a href="/Images/Culture/Agbada_2.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Aso-Oke</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="culture yoruba">
+          <div class="img-container">
+            <img src="/Images/Culture/Aso-oke_.jpg" data-full="/Images/Culture/Aso-oke_.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yoruba Dress"/>
+            <a href="/Images/Culture/Aso-oke_.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Aso-Oke</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="culture yoruba">
+          <div class="img-container">
+            <img src="/Images/Culture/Yoruba attire____.jpg" data-full="/Images/Culture/Yoruba attire____.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yoruba Dress"/>
+            <a href="/Images/Culture/Yoruba attire____.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Aso-Oke</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="culture yoruba">
+          <div class="img-container">
+            <img src="/Images/Culture/Yoruba Wedding01.jpg" data-full="/Images/Culture/Yoruba Wedding01.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yoruba Dress"/>
+            <a href="/Images/Culture/Yoruba Wedding01.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yoruba Wedding</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="culture yoruba">
+          <div class="img-container">
+            <img src="/Images/Culture/Yoruba wedding02.jpg" data-full="/Images/Culture/Yoruba wedding02.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yoruba Dress"/>
+            <a href="/Images/Culture/Yoruba wedding02.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yoruba Wedding</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="culture yoruba">
+          <div class="img-container">
+            <img src="/Images/Culture/Asoebi001.jpg" data-full="/Images/Culture/Asoebi001.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yoruba Dress"/>
+            <a href="/Images/Culture/Asoebi001.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Aso-Oke</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="culture yoruba">
+          <div class="img-container">
+            <img src="/Images/Culture/Yoruba Asoebi__1.jpg" data-full="/Images/Culture/Yoruba Asoebi__1.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yoruba Dress"/>
+            <a href="/Images/Culture/Yoruba Asoebi__1.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Aso-oke</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="culture yoruba">
+          <div class="img-container">
+            <img src="/Images/Culture/Aso-ebi01-.jpg" data-full="/Images/Culture/Aso-ebi01-.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yoruba Dress"/>
+            <a href="/Images/Culture/Aso-ebi01-.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Aso-ebi</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="culture yoruba">
+          <div class="img-container">
+            <img src="/Images/Culture/Aso ebi girls and grooms men.jpg" data-full="/Images/Culture/Aso ebi girls and grooms men.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yoruba Dress"/>
+            <a href="/Images/Culture/Aso ebi girls and grooms men.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Aso-ebi Girls And Men</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="culture yoruba">
+          <div class="img-container">
+            <img src="/Images/Culture/Yoruba001__.jpg" data-full="/Images/Culture/Yoruba001__.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yoruba Dress"/>
+            <a href="/Images/Culture/Yoruba001__.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">Yoruba Attire</p>
         </div>
@@ -1141,13 +1391,12 @@
         <!---->
         <div class="col-md-4 gallery-item" data-tags="culture yoruba">
           <div class="img-container">
-            <img src="" data-full="" class="img-fluid gallery-img img-hover w-100"
+            <img src="/Images/Culture/Yoruba02__.jpg" data-full="/Images/Culture/Yoruba02__.jpg" class="img-fluid gallery-img img-hover w-100"
             data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yoruba Dress"/>
-            <a href="" download class="btn btn-sm btn-success download-btn protected">Download</a>
+            <a href="/Images/Culture/Yoruba02__.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">Yoruba Attire</p>
         </div>
-
 
         <!--HAUSA-->
         <!--1-->
@@ -1288,7 +1537,6 @@
           <p class="text-center mt-2">Hausa Attire</p>
         </div>
 
-      
       <!---->
       <div class="col-md-4 gallery-item" data-tags="culture hausa">
           <div class="img-container">
@@ -1328,10 +1576,10 @@
       <!---->
       <div class="col-md-4 gallery-item" data-tags="culture hausa">
           <div class="img-container">
-            <img src="" data-full="" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Fulani's"/>
-            <a href="" download class="btn btn-sm btn-success download-btn protected">Download</a>
+            <img src="/Images/Culture/Fulani___.jpg" data-full="/Images/Culture/Fulani___.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Fulani's"/>
+            <a href="/Images/Culture/Fulani___.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
-          <p class="text-center mt-2"></p>
+          <p class="text-center mt-2">Fulani</p>
         </div>
       </div>
 
@@ -1344,7 +1592,7 @@
             <img src="/Images/People/woman.jpg" data-full="/Images/People/woman.jpg"
             class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal"
             data-bs-target="#imageModal" alt="Lady"/>
-            <a href="/Images/People/woman.jpg" downloadclass="btn btn-sm btn-success download-btn protected">Download</a>
+            <a href="/Images/People/woman.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">Lady</p>
         </div>
@@ -1528,9 +1776,64 @@
         <!---->
         <div class="col-md-4 gallery-item" data-tags="people humans">
           <div class="img-container">
-            <img src="" data-full="" class="img-fluid gallery-img img-hover w-100"
+            <img src="/Images/People/Kid__.jpg" data-full="/Images/People/Kid__.jpg" class="img-fluid gallery-img img-hover w-100"
             data-bs-toggle="modal" data-bs-target="#imageModal" alt="Lady"/>
-            <a href="" download
+            <a href="/Images/People/Kid__.jpg" download
+            class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Boy Child</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="people humans">
+          <div class="img-container">
+            <img src="/Images/People/Guy.jpg" data-full="/Images/People/Guy.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <a href="/Images/People/Guy.jpg" download
+            class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Guy</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="people humans">
+          <div class="img-container">
+            <img src="/Images/People/Guy1.jpg" data-full="/Images/People/Guy1.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <a href="/Images/People/Guy1.jpg" download
+            class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Guy</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="people humans">
+          <div class="img-container">
+            <img src="/Images/People/Guy2.jpg" data-full="/Images/People/Guy2.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <a href="/Images/People/Guy2.jpg" download
+            class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Guy</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="people humans">
+          <div class="img-container">
+            <img src="/Images/People/Guy3.jpg" data-full="/Images/People/Guy3.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <a href="/Images/People/Guy3.jpg" download
+            class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Guy</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="people humans">
+          <div class="img-container">
+            <img src="/Images/People/Lady__1.jpg" data-full="/Images/People/Lady__1.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt="lady"/>
+            <a href="/Images/People/Lady__1.jpg" download
             class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">Lady</p>
@@ -1539,59 +1842,48 @@
         <!---->
         <div class="col-md-4 gallery-item" data-tags="people humans">
           <div class="img-container">
-            <img src="" data-full="" class="img-fluid gallery-img img-hover w-100"
-            data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
-            <a href="" download
+            <img src="/Images/People/Lady__.jpg" data-full="/Images/People/Lady__.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt="lady"/>
+            <a href="/Images/People/Lady__.jpg" download
             class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
-          <p class="text-center mt-2"></p>
+          <p class="text-center mt-2">Lady</p>
         </div>
 
-        <!---->
+      <!---->
         <div class="col-md-4 gallery-item" data-tags="people humans">
           <div class="img-container">
-            <img src="" data-full="" class="img-fluid gallery-img img-hover w-100"
-            data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
-            <a href="" download
+            <img src="/Images/People/Happy lady.jpg" data-full="/Images/People/Happy lady.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt="lady"/>
+            <a href="/Images/People/Happy lady.jpg" download
             class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
-          <p class="text-center mt-2"></p>
+          <p class="text-center mt-2">Happy Lady</p>
         </div>
 
-        <!---->
+      <!---->
         <div class="col-md-4 gallery-item" data-tags="people humans">
           <div class="img-container">
-            <img src="" data-full="" class="img-fluid gallery-img img-hover w-100"
-            data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
-            <a href="" download
+            <img src="/Images/People/Happy lady1.jpg" data-full="/Images/People/Happy lady1.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt="lady"/>
+            <a href="/Images/People/Happy lady1.jpg" download
             class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
-          <p class="text-center mt-2"></p>
+          <p class="text-center mt-2">Lady</p>
         </div>
 
-        <!---->
+      <!---->
         <div class="col-md-4 gallery-item" data-tags="people humans">
           <div class="img-container">
-            <img src="" data-full="" class="img-fluid gallery-img img-hover w-100"
-            data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
-            <a href="" download
+            <img src="/Images/People/elderly man_.jpg" data-full="/Images/People/elderly man_.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt="man"/>
+            <a href="/Images/People/elderly man_.jpg" download
             class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
-          <p class="text-center mt-2"></p>
+          <p class="text-center mt-2">Ederly man</p>
         </div>
 
-        <!---->
-        <div class="col-md-4 gallery-item" data-tags="people humans">
-          <div class="img-container">
-            <img src="" data-full="" class="img-fluid gallery-img img-hover w-100"
-            data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
-            <a href="" download
-            class="btn btn-sm btn-success download-btn protected">Download</a>
-          </div>
-          <p class="text-center mt-2"></p>
-        </div>
-
-        <!---->
+      <!---->
         <div class="col-md-4 gallery-item" data-tags="people humans">
           <div class="img-container">
             <img src="" data-full="" class="img-fluid gallery-img img-hover w-100"
@@ -1675,20 +1967,13 @@
         <!--7-->
         <div class="col-md-4 gallery-item" data-tags="event ceremony">
           <div class="img-container">
-            <img
-              src="/Images/Events/event colorful decor.jpeg"
+            <img src="/Images/Events/event colorful decor.jpeg"
               data-full="/Images/Events/event colorful decor.jpeg"
               class="img-fluid gallery-img img-hover w-100"
-              data-bs-toggle="modal"
-              data-bs-target="#imageModal"
-              alt="Igbo Festival"
-            />
-            <a
-              href="/Images/Events/event colorful decor.jpeg"
-              download
-              class="btn btn-sm btn-success download-btn protected"
-              >Download</a
-            >
+              data-bs-toggle="modal" data-bs-target="#imageModal"
+              alt="Igbo Festival"/>
+            <a href="/Images/Events/event colorful decor.jpeg" download
+              class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">Colorful decor</p>
         </div>
@@ -1696,20 +1981,10 @@
         <!--8-->
         <div class="col-md-4 gallery-item" data-tags="event ceremony">
           <div class="img-container">
-            <img
-              src="/Images/Events/event center.jpeg"
-              data-full="/Images/Events/event center.jpeg"
-              class="img-fluid gallery-img img-hover w-100"
-              data-bs-toggle="modal"
-              data-bs-target="#imageModal"
-              alt="Igbo Festival"
-            />
-            <a
-              href="/Images/Events/event center.jpeg"
-              download
-              class="btn btn-sm btn-success download-btn protected"
-              >Download</a
-            >
+            <img src="/Images/Events/event center.jpeg" data-full="/Images/Events/event center.jpeg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt="Igbo Festival"/>
+            <a href="/Images/Events/event center.jpeg" download
+              class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">Hall</p>
         </div>
@@ -1717,20 +1992,9 @@
         <!--9-->
         <div class="col-md-4 gallery-item" data-tags="event ceremony">
           <div class="img-container">
-            <img
-              src="/Images/Events/decor.jpeg"
-              data-full="/Images/Events/decor.jpeg"
-              class="img-fluid gallery-img img-hover w-100"
-              data-bs-toggle="modal"
-              data-bs-target="#imageModal"
-              alt="Igbo Festival"
-            />
-            <a
-              href="/Images/Events/decor.jpeg"
-              download
-              class="btn btn-sm btn-success download-btn protected"
-              >Download</a
-            >
+            <img src="/Images/Events/decor.jpeg" data-full="/Images/Events/decor.jpeg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Igbo Festival"/>
+            <a href="/Images/Events/decor.jpeg" download
+              class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">Decor</p>
         </div>
@@ -1738,20 +2002,12 @@
         <!--10-->
         <div class="col-md-4 gallery-item" data-tags="event ceremony">
           <div class="img-container">
-            <img
-              src="/Images/Events/bride & groom seat decor.jpeg"
+            <img src="/Images/Events/bride & groom seat decor.jpeg"
               data-full="/Images/Events/bride & groom seat decor.jpeg"
-              class="img-fluid gallery-img img-hover w-100"
-              data-bs-toggle="modal"
-              data-bs-target="#imageModal"
-              alt="Igbo Festival"
-            />
-            <a
-              href="/Images/Events/bride & groom seat decor.jpeg"
-              download
-              class="btn btn-sm btn-success download-btn protected"
-              >Download</a
-            >
+              class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal"
+              data-bs-target="#imageModal" alt="Igbo Festival"/>
+            <a href="/Images/Events/bride & groom seat decor.jpeg" download
+              class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">Stage decor</p>
         </div>
@@ -1773,10 +2029,8 @@
         <!--papa Kumuyi-->
         <div class="col-md-4 gallery-item" data-tags="William Kumuyi pastor">
           <div class="img-container">
-            <img src="/Images/Pastors/Papa Kumuyi1.jpg"
-              data-full="/Images/Pastors/Papa Kumuyi1.jpg"
-              class="img-fluid gallery-img img-hover w-100"
-              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <img src="/Images/Pastors/Papa Kumuyi1.jpg" data-full="/Images/Pastors/Papa Kumuyi1.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
             <a href="/Images/Pastors/Papa Kumuyi1.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">William Kumuyi</p>
@@ -1785,10 +2039,8 @@
         <!--2-->
         <div class="col-md-4 gallery-item" data-tags="William Kumuyi pastor">
           <div class="img-container">
-            <img src="/Images/Pastors/Papa-Kumuyi-1.webp"
-              data-full="/Images/Pastors/Papa-Kumuyi-1.webp"
-              class="img-fluid gallery-img img-hover w-100"
-              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <img src="/Images/Pastors/Papa-Kumuyi-1.webp" data-full="/Images/Pastors/Papa-Kumuyi-1.webp" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
             <a href="/Images/Pastors/Papa-Kumuyi-1.webp" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">William Kumuyi</p>
@@ -1797,10 +2049,8 @@
          <!--3-->
         <div class="col-md-4 gallery-item" data-tags="William Kumuyi pastor">
           <div class="img-container">
-            <img src="/Images/Pastors/Papa Kumuyi2.jpg"
-              data-full="/Images/Pastors/Papa Kumuyi2.jpg"
-              class="img-fluid gallery-img img-hover w-100"
-              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <img src="/Images/Pastors/Papa Kumuyi2.jpg" data-full="/Images/Pastors/Papa Kumuyi2.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
             <a href="/Images/Pastors/Papa Kumuyi2.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">William Kumuyi</p>
@@ -1809,10 +2059,8 @@
           <!--4-->
         <div class="col-md-4 gallery-item" data-tags="William Kumuyi pastor">
           <div class="img-container">
-            <img src="/Images/Pastors/Papa Kumuyi-3.jpg"
-              data-full="/Images/Pastors/Papa Kumuyi-3.jpg"
-              class="img-fluid gallery-img img-hover w-100"
-              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <img src="/Images/Pastors/Papa Kumuyi-3.jpg" data-full="/Images/Pastors/Papa Kumuyi-3.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
             <a href="/Images/Pastors/Papa Kumuyi-3.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">William Kumuyi</p>
@@ -1821,10 +2069,8 @@
         <!--5-->
         <div class="col-md-4 gallery-item" data-tags="William Kumuyi pastor">
           <div class="img-container">
-            <img src="/Images/Pastors/Papa Kumuyi4.jpg"
-              data-full="/Images/Pastors/Papa Kumuyi4.jpg"
-              class="img-fluid gallery-img img-hover w-100"
-              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <img src="/Images/Pastors/Papa Kumuyi4.jpg" data-full="/Images/Pastors/Papa Kumuyi4.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
             <a href="/Images/Pastors/Papa Kumuyi4.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">William Kumuyi</p>
@@ -1833,10 +2079,8 @@
         <!--6-->
         <div class="col-md-4 gallery-item" data-tags="William Kumuyi pastor">
           <div class="img-container">
-            <img src="/Images/Pastors/Papa Kumuyi-5.jpg"
-              data-full="/Images/Pastors/Papa Kumuyi-5.jpg"
-              class="img-fluid gallery-img img-hover w-100"
-              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <img src="/Images/Pastors/Papa Kumuyi-5.jpg" data-full="/Images/Pastors/Papa Kumuyi-5.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
             <a href="/Images/Pastors/Papa Kumuyi-5.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">William Kumuyi</p>
@@ -1845,10 +2089,8 @@
         <!--7-->
         <div class="col-md-4 gallery-item" data-tags="William Kumuyi pastor">
           <div class="img-container">
-            <img src="/Images/Pastors/Papa Kumuyi-6.jpg"
-              data-full="/Images/Pastors/Papa Kumuyi-6.jpg"
-              class="img-fluid gallery-img img-hover w-100"
-              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <img src="/Images/Pastors/Papa Kumuyi-6.jpg" data-full="/Images/Pastors/Papa Kumuyi-6.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
             <a href="/Images/Pastors/Papa Kumuyi-6.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">William Kumuyi</p>
@@ -1857,10 +2099,8 @@
         <!--8-->
         <div class="col-md-4 gallery-item" data-tags="William Kumuyi pastor">
           <div class="img-container">
-            <img src="/Images/Pastors/Papa Kumuyi-7.jpg"
-              data-full="/Images/Pastors/Papa Kumuyi-7.jpg"
-              class="img-fluid gallery-img img-hover w-100"
-              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <img src="/Images/Pastors/Papa Kumuyi-7.jpg" data-full="/Images/Pastors/Papa Kumuyi-7.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
             <a href="/Images/Pastors/Papa Kumuyi-7.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">William Kumuyi</p>
@@ -1869,10 +2109,8 @@
         <!--9-->
         <div class="col-md-4 gallery-item" data-tags="William Kumuyi pastor">
           <div class="img-container">
-            <img src="/Images/Pastors/Papa Kumuyi-9.webp"
-              data-full="/Images/Pastors/Papa Kumuyi-9.webp"
-              class="img-fluid gallery-img img-hover w-100"
-              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <img src="/Images/Pastors/Papa Kumuyi-9.webp" data-full="/Images/Pastors/Papa Kumuyi-9.webp" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
             <a href="/Images/Pastors/Papa Kumuyi-9.webp" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">William Kumuyi</p>
@@ -1881,10 +2119,8 @@
         <!--10-->
         <div class="col-md-4 gallery-item" data-tags="William Kumuyi pastor">
           <div class="img-container">
-            <img src="/Images/Pastors/Papa Kumuyi-10.webp"
-              data-full="/Images/Pastors/Papa Kumuyi-10.webp"
-              class="img-fluid gallery-img img-hover w-100"
-              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <img src="/Images/Pastors/Papa Kumuyi-10.webp" data-full="/Images/Pastors/Papa Kumuyi-10.webp" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
             <a href="/Images/Pastors/Papa Kumuyi-10.webp" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">William Kumuyi</p>
@@ -1893,9 +2129,7 @@
         <!--11-->
         <div class="col-md-4 gallery-item" data-tags="William Kumuyi pastor">
           <div class="img-container">
-            <img src="/Images/Pastors/Papa Kumuyi-11.png"
-              data-full="/Images/Pastors/Papa Kumuyi-11.png"
-              class="img-fluid gallery-img img-hover w-100"
+            <img src="/Images/Pastors/Papa Kumuyi-11.png" data-full="/Images/Pastors/Papa Kumuyi-11.png" class="img-fluid gallery-img img-hover w-100"
               data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
             <a href="/Images/Pastors/Papa Kumuyi-11.png" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
@@ -1905,10 +2139,8 @@
         <!--12-->
         <div class="col-md-4 gallery-item" data-tags="William Kumuyi pastor">
           <div class="img-container">
-            <img src="/Images/Pastors/Papa kumuyi_.jpg"
-              data-full="/Images/Pastors/Papa kumuyi_.jpg"
-              class="img-fluid gallery-img img-hover w-100"
-              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <img src="/Images/Pastors/Papa kumuyi_.jpg" data-full="/Images/Pastors/Papa kumuyi_.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
             <a href="/Images/Pastors/Papa kumuyi_.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">Pastor William Kumuyi</p>
@@ -1917,10 +2149,8 @@
         <!--13-->
         <div class="col-md-4 gallery-item" data-tags="William Kumuyi pastor">
           <div class="img-container">
-            <img src="/Images/Pastors/Papa Kumuyi_1.jpg"
-              data-full="/Images/Pastors/Papa Kumuyi_1.jpg"
-              class="img-fluid gallery-img img-hover w-100"
-              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <img src="/Images/Pastors/Papa Kumuyi_1.jpg" data-full="/Images/Pastors/Papa Kumuyi_1.jpg" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt="Pastor Kumuyi"/>
             <a href="/Images/Pastors/Papa Kumuyi_1.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">Pastor William Kumuyi</p>
@@ -1930,10 +2160,7 @@
         <!--1-->
         <div class="col-md-4 gallery-item" data-tags="Enoch Adeboye pastor">
           <div class="img-container">
-            <img src="/Images/Pastors/PAPA-Adeboye-2.jpg"
-              data-full="/Images/Pastors/PAPA-Adeboye-2.jpg"
-              class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal"
-              data-bs-target="#imageModal" alt="Igbo Festival"/>
+            <img src="/Images/Pastors/PAPA-Adeboye-2.jpg" data-full="/Images/Pastors/PAPA-Adeboye-2.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Pastor Adeboye"/>
             <a href="/Images/Pastors/PAPA-Adeboye-2.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">Pastor Enoch Adeboye</p>
@@ -1942,10 +2169,8 @@
         <!--2-->
         <div class="col-md-4 gallery-item" data-tags="Enoch Adeboye pastor">
           <div class="img-container">
-            <img src="/Images/Pastors/Pastor-Adeboye.jpg"
-              data-full="/Images/Pastors/Pastor-Adeboye.jpg"
-              class="img-fluid gallery-img img-hover w-100"
-              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <img src="/Images/Pastors/Pastor-Adeboye.jpg" data-full="/Images/Pastors/Pastor-Adeboye.jpg" class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal" data-bs-target="#imageModal" alt="Pastor Adeboye"/>
             <a href="/Images/Pastors/Pastor-Adeboye.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">Pastor Enoch Adeboye</p>
@@ -1954,10 +2179,9 @@
         <!--3-->
         <div class="col-md-4 gallery-item" data-tags="Enoch Adeboye pastor">
           <div class="img-container">
-            <img src="/Images/Pastors/Papa-G.O.jpg"
-              data-full="/Images/Pastors/Papa-G.O.jpg"
+            <img src="/Images/Pastors/Papa-G.O.jpg" data-full="/Images/Pastors/Papa-G.O.jpg"
               class="img-fluid gallery-img img-hover w-100"
-              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+              data-bs-toggle="modal" data-bs-target="#imageModal" alt="Pastor Adeboye"/>
             <a href="/Images/Pastors/Papa-G.O.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">Pastor Enoch Adeboye</p>
@@ -1966,10 +2190,8 @@
         <!--4-->
         <div class="col-md-4 gallery-item" data-tags="Enoch Adeboye pastor">
           <div class="img-container">
-            <img src="/Images/Pastors/Papa GO2.jpg"
-              data-full="/Images/Pastors/Papa GO2.jpg"
-              class="img-fluid gallery-img img-hover w-100"
-              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <img src="/Images/Pastors/Papa GO2.jpg" data-full="/Images/Pastors/Papa GO2.jpg"
+              class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Pastor Adeboye"/>
             <a href="/Images/Pastors/Papa GO2.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">Pastor Enoch Adeboye</p>
@@ -1981,7 +2203,7 @@
             <img src="/Images/Pastors/Papa-G.O1.jpg"
               data-full="/Images/Pastors/Papa-G.O1.jpg"
               class="img-fluid gallery-img img-hover w-100"
-              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+              data-bs-toggle="modal" data-bs-target="#imageModal" alt="Pastor Adeboye"/>
             <a href="/Images/Pastors/Papa-G.O1.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">Pastor Enoch Adeboye</p>
@@ -1990,10 +2212,9 @@
         <!--6-->
         <div class="col-md-4 gallery-item" data-tags="Enoch Adeboye pastor">
           <div class="img-container">
-            <img src="/Images/Pastors/Papa-G.O4.jpg"
-              data-full="/Images/Pastors/Papa-G.O4.jpg"
+            <img src="/Images/Pastors/Papa-G.O4.jpg" data-full="/Images/Pastors/Papa-G.O4.jpg"
               class="img-fluid gallery-img img-hover w-100"
-              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+              data-bs-toggle="modal" data-bs-target="#imageModal" alt="Pastor Adeboye"/>
             <a href="/Images/Pastors/Papa-G.O4.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">Pastor Enoch Adeboye</p>
@@ -2002,10 +2223,8 @@
          <!--7-->
         <div class="col-md-4 gallery-item" data-tags="Enoch Adeboye pastor">
           <div class="img-container">
-            <img src="/Images/Pastors/Daddy-GO2.webp"
-              data-full="/Images/Pastors/Daddy-GO2.webp"
-              class="img-fluid gallery-img img-hover w-100"
-              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <img src="/Images/Pastors/Daddy-GO2.webp" data-full="/Images/Pastors/Daddy-GO2.webp" class="img-fluid gallery-img img-hover w-100"
+            data-bs-toggle="modal" data-bs-target="#imageModal" alt="Pastor Adeboye"/>
             <a href="/Images/Pastors/Daddy-GO2.webp" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">Pastor Enoch Adeboye</p>
@@ -2201,6 +2420,102 @@
               class="img-fluid gallery-img img-hover w-100"
               data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
             <a href="/Images/Pastors/Bishop Oyedepo10.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Bishop David Oyedepo</p>
+        </div>
+
+        <!--11-->
+        <div class="col-md-4 gallery-item" data-tags="David Oyedepo pastor">
+          <div class="img-container">
+            <img src="/Images/Pastors/Bishop_Oyedepo_.jpg"
+              data-full="/Images/Pastors/Bishop_Oyedepo_.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <a href="/Images/Pastors/Bishop_Oyedepo_.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Bishop David Oyedepo</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="David Oyedepo pastor">
+          <div class="img-container">
+            <img src="/Images/Pastors/Bishop_Oyedepo_1.jpg"
+              data-full="/Images/Pastors/Bishop_Oyedepo_1.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <a href="/Images/Pastors/Bishop_Oyedepo_1.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Bishop David Oyedepo</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="David Oyedepo pastor">
+          <div class="img-container">
+            <img src="/Images/Pastors/Bishop_Oyedepo_2.jpg"
+              data-full="/Images/Pastors/Bishop_Oyedepo_2.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <a href="/Images/Pastors/Bishop_Oyedepo_2.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Bishop David Oyedepo</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="David Oyedepo pastor">
+          <div class="img-container">
+            <img src="/Images/Pastors/Bishop_Oyedepo_3.jpg"
+              data-full="/Images/Pastors/Bishop_Oyedepo_3.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <a href="/Images/Pastors/Bishop_Oyedepo_3.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Bishop David Oyedepo</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="David Oyedepo pastor">
+          <div class="img-container">
+            <img src="/Images/Pastors/Bishop_Oyedepo_4.jpg"
+              data-full="/Images/Pastors/Bishop_Oyedepo_4.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <a href="/Images/Pastors/Bishop_Oyedepo_4.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Bishop David Oyedepo</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="David Oyedepo pastor">
+          <div class="img-container">
+            <img src="/Images/Pastors/Bishop_Oyedepo_5.jpg"
+              data-full="/Images/Pastors/Bishop_Oyedepo_5.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <a href="/Images/Pastors/Bishop_Oyedepo_5.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Bishop David Oyedepo</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="David Oyedepo pastor">
+          <div class="img-container">
+            <img src="/Images/Pastors/Bishop_Oyedepo_6.jpg"
+              data-full="/Images/Pastors/Bishop_Oyedepo_6.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <a href="/Images/Pastors/Bishop_Oyedepo_6.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Bishop David Oyedepo</p>
+        </div>
+
+        <!---->
+        <div class="col-md-4 gallery-item" data-tags="David Oyedepo pastor">
+          <div class="img-container">
+            <img src="/Images/Pastors/Bishop_Oyedepo_7.jpg"
+              data-full="/Images/Pastors/Bishop_Oyedepo_7.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal" data-bs-target="#imageModal" alt=""/>
+            <a href="/Images/Pastors/Bishop_Oyedepo_7.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">Bishop David Oyedepo</p>
         </div>
@@ -10286,8 +10601,8 @@
          <!---->
         <div class="col-md-4 gallery-item" data-tags="Olamide Gbenga Adedeji celebrities">
           <div class="img-container">
-            <img src="" data-full="" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Olamide" loading="lazy"/>
-            <a href="" download class="btn btn-sm btn-success download-btn protected">Download</a>
+            <img src="/Images/Celebrities/Musicians/Olamide/Olamide baddo.jpg" data-full="/Images/Celebrities/Musicians/Olamide/Olamide baddo.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Olamide" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Olamide/Olamide baddo.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">Olamide Gbenga Adedeji ~ Baddo</p>
         </div>
@@ -10434,6 +10749,865 @@
             <a href="" download class="btn btn-sm btn-success download-btn protected">Download</a>
           </div>
           <p class="text-center mt-2">Olamide Gbenga Adedeji ~ Baddo</p>
+        </div>
+
+        <!--REMA-->
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema1.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema1.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema1.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema2.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema2.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema2.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema3.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema3.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema3.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema4.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema4.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema4.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema5.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema5.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema5.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema6.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema6.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema6.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema7.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema7.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema7.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema8.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema8.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema8.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema9.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema9.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema9.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema10.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema10.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema10.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema11.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema11.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema11.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema12.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema12.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema12.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema13.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema13.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema13.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema14.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema14.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema14.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema15.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema15.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema15.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema16.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema16.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema16.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema17.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema17.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema17.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema18.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema18.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema18.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema19.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema19.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema19.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema20.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema20.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema20.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema21.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema21.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema21.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema22.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema22.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema22.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema23.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema23.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema23.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema24.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema24.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema24.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema25.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema25.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema25.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema26.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema26.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema26.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema27.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema27.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema27.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema28.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema28.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema28.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema29.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema29.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema29.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema30.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema30.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema30.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema31.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema31.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema31.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema32.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema32.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema32.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema33.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema33.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema33.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema34.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema34.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema34.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema35.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema35.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema35.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema36.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema36.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema36.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema37.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema37.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema37.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema38.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema38.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema38.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema39.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema39.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema39.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema40.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema40.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema40.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema41.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema41.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema41.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema42.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema42.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema42.jpg/Images/Celebrities/Musicians/Rema/Rema42.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema43.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema43.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema43.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema44.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema44.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema44.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema45.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema45.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema45.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema46.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema46.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema46.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema47.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema47.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema47.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema48.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema48.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema48.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema49.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema49.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema49.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema50.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema50.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema50.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema51.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema51.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema51.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Divine Ikubor Rema celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Rema/Rema52.jpg" data-full="/Images/Celebrities/Musicians/Rema/Rema52.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Rema" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Rema/Rema52.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Divine Ikubor ~ Rema</p>
+        </div>
+
+        <!--YEMI ALADE-->
+        <div class="col-md-4 gallery-item" data-tags="Yemi Alade celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade.jpg" data-full="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yemi Alade" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yemi Alade</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Yemi Alade celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade1.jpg" data-full="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade1.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yemi Alade" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade1.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yemi Alade</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Yemi Alade celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade2.jpg" data-full="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade2.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yemi Alade" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade2.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yemi Alade</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Yemi Alade celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade3.jpg" data-full="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade3.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yemi Alade" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade3.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yemi Alade</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Yemi Alade celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade4.jpg" data-full="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade4.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yemi Alade" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade4.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yemi Alade</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Yemi Alade celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade5.jpg" data-full="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade5.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yemi Alade" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade5.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yemi Alade</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Yemi Alade celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade6.jpg" data-full="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade6.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yemi Alade" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade6.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yemi Alade</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Yemi Alade celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade7.jpg" data-full="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade7.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yemi Alade" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade7.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yemi Alade</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Yemi Alade celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade8.jpg" data-full="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade8.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yemi Alade" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade8.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yemi Alade</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Yemi Alade celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade9.jpg" data-full="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade9.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yemi Alade" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade9.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yemi Alade</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Yemi Alade celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade10.jpg" data-full="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade10.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yemi Alade" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade10.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yemi Alade</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Yemi Alade celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade11.jpg" data-full="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade11.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yemi Alade" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade11.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yemi Alade</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Yemi Alade celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade12.jpg" data-full="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade12.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yemi Alade" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade12.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yemi Alade</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Yemi Alade celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade13.jpg" data-full="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade13.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yemi Alade" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade13.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yemi Alade</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Yemi Alade celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade14.jpg" data-full="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade14.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yemi Alade" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade14.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yemi Alade</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Yemi Alade celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade15.jpg" data-full="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade15.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yemi Alade" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade15.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yemi Alade</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Yemi Alade celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade16.jpg" data-full="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade16.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yemi Alade" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade16.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yemi Alade</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Yemi Alade celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade17.jpg" data-full="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade17.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yemi Alade" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade17.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yemi Alade</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Yemi Alade celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade18.jpg" data-full="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade18.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yemi Alade" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade18.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yemi Alade</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Yemi Alade celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade19.jpg" data-full="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade19.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yemi Alade" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade19.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yemi Alade</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Yemi Alade celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade20.jpg" data-full="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade20.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yemi Alade" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade20.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yemi Alade</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Yemi Alade celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade21.jpg" data-full="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade21.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yemi Alade" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade21.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yemi Alade</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Yemi Alade celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade22.jpg" data-full="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade22.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yemi Alade" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade22.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yemi Alade</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Yemi Alade celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade23.jpg" data-full="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade23.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yemi Alade" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade23.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yemi Alade</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Yemi Alade celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade24.jpg" data-full="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade24.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Yemi Alade" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Yemi Alade/Yemi Alade24.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Yemi Alade</p>
+        </div>
+
+        <!--ODUMODU BLVCK-->
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck1.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck1.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck1.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck2.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck2.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck2.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck3.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck3.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck3.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck4.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck4.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck4.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck5.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck5.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck5.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck6.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck6.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck6.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck7.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck7.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck7.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck8.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck8.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck8.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck9.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck9.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck9.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck10.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck10.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck10.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck11.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck11.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck11.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck12.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck12.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck12.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck13.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck13.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck13.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck14.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck14.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck14.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck15.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck15.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck15.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck16.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck16.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck16.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck17.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck17.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck17.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck18.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck18.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck18.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck19.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck19.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck19.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck20.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck20.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck20.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck21.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck21.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck21.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck22.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck22.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck22.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck23.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck23.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck23.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck24.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck24.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck24.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck25.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck25.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck25.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck26.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck26.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck26.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck27.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck27.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck27.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
+        </div>
+
+        <div class="col-md-4 gallery-item" data-tags="Odumodublvck celebrities">
+          <div class="img-container">
+            <img src="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck28.jpg" data-full="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck28.jpg" class="img-fluid gallery-img img-hover w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Odumodublvck" loading="lazy"/>
+            <a href="/Images/Celebrities/Musicians/Odumodublvck/Odumodu Blvck28.jpg" download class="btn btn-sm btn-success download-btn protected">Download</a>
+          </div>
+          <p class="text-center mt-2">Tochukwu Gbubemi Ojogwu ~ Odumodublvck</p>
         </div>
 
     </div>
@@ -10465,8 +11639,7 @@
     <div class="row row-cols-1 row-cols-md-3 g-4">
      <div class="col-md-4">
        <div class="card border-0 position-relative">
-         <img src="/Images/Images/9ja child.jpg" class="card-img-top img-hover" alt="Featured 1"
-           data-bs-toggle="modal" data-bs-target="#imageModal" data-img="/Images/Images/9ja child.jpg"/>
+         <img src="/Images/Images/9ja child.jpg" class="card-img-top img-hover" alt="Featured 1" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="/Images/Images/9ja child.jpg"/>
          <a href="/Images/Images/9ja child.jpg" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
        </div>
      </div>
@@ -10705,8 +11878,7 @@
 
       <div class="col-md-4 image-top34">
        <div class="card border-0">
-         <img src="/Images/Images/zebra-2545275_1280.jpg" class="card-img-top img-hover" alt="Featured 1"
-           data-bs-toggle="modal" data-bs-target="#imageModal" data-img="/Images/Images/zebra-2545275_1280.jpg"/>
+         <img src="/Images/Images/zebra-2545275_1280.jpg" class="card-img-top img-hover" alt="Featured 1" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="/Images/Images/zebra-2545275_1280.jpg"/>
          <a href="/Images/Images/zebra-2545275_1280.jpg" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
        </div>
      </div>
@@ -10730,8 +11902,278 @@
        Next ›
       </button>
       </div>
-      </div>        
-      </div>   
+    </div>
+      
+      <!--Group 3-->
+    <div class="carousel-item">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+     <div class="col-md-4">
+       <div class="card border-0 position-relative">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+     <div class="col-md-4">
+       <div class="card border-0 position-relative">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+     <div class="col-md-4">
+       <div class="card border-0 position-relative">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+     <div class="col-md-4 image-top24">
+       <div class="card border-0 position-relative">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+     <div class="col-md-4 image-top25">
+       <div class="card border-0">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+      <div class="col-md-4 image-top26">
+       <div class="card border-0">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+     <div class="col-md-4 image-top27">
+       <div class="card border-0">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+     <div class="col-md-4 image-top28">
+       <div class="card border-0">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+     <div class="col-md-4 image-top29">
+       <div class="card border-0">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+     <div class="col-md-4 image-top30">
+       <div class="card border-0">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+     <div class="col-md-4 image-top31">
+       <div class="card border-0">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+     <div class="col-md-4 image-top32">
+       <div class="card border-0">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+     <div class="col-md-4 image-top33">
+       <div class="card border-0">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+      <div class="col-md-4 image-top34">
+       <div class="card border-0">
+         <img src="" class="card-img-top img-hover" alt="Featured 1" data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+     <div class="col-md-4 image-top35">
+       <div class="card border-0">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+    </div>
+
+    <div class="text-center" id="my-buttons">
+      <button class="btn btn-outline-success me-2" type="button"
+      data-bs-target="#groupCarousel" data-bs-slide="prev">
+      ‹ Previous
+      </button>
+      <button class="btn btn-outline-success" type="button"
+       data-bs-target="#groupCarousel" data-bs-slide="next">
+       Next ›
+      </button>
+      </div>
+      </div>
+      
+      <!--Group 4-->
+    <div class="carousel-item">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+     <div class="col-md-4">
+       <div class="card border-0 position-relative">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+     <div class="col-md-4">
+       <div class="card border-0 position-relative">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+     <div class="col-md-4">
+       <div class="card border-0 position-relative">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+     <div class="col-md-4 image-top24">
+       <div class="card border-0 position-relative">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+     <div class="col-md-4 image-top25">
+       <div class="card border-0">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+      <div class="col-md-4 image-top26">
+       <div class="card border-0">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+     <div class="col-md-4 image-top27">
+       <div class="card border-0">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+     <div class="col-md-4 image-top28">
+       <div class="card border-0">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+     <div class="col-md-4 image-top29">
+       <div class="card border-0">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+     <div class="col-md-4 image-top30">
+       <div class="card border-0">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+     <div class="col-md-4 image-top31">
+       <div class="card border-0">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+     <div class="col-md-4 image-top32">
+       <div class="card border-0">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+     <div class="col-md-4 image-top33">
+       <div class="card border-0">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+      <div class="col-md-4 image-top34">
+       <div class="card border-0">
+         <img src="" class="card-img-top img-hover" alt="Featured 1" data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+
+     <div class="col-md-4 image-top35">
+       <div class="card border-0">
+         <img src="" class="card-img-top img-hover" alt="Featured 1"
+           data-bs-toggle="modal" data-bs-target="#imageModal" data-img=""/>
+         <a href="" download class="btn btn-sm btn-light download-btn protected"><i class="bi bi-download text-black"></i></a>
+       </div>
+     </div>
+    </div>
+
+    <div class="text-center" id="my-buttons">
+      <button class="btn btn-outline-success me-2" type="button"
+      data-bs-target="#groupCarousel" data-bs-slide="prev">
+      ‹ Previous
+      </button>
+      <button class="btn btn-outline-success" type="button"
+       data-bs-target="#groupCarousel" data-bs-slide="next">
+       Next ›
+      </button>
+      </div>
+      </div>
+     </div>   
     </div>
   </div>
 </section>
@@ -10787,7 +12229,6 @@
       </div>
     </section>
 
-
     <!-- Footer Section -->
     <footer class="bg-light text-white pb-4">
       <div class="container">
@@ -10802,7 +12243,7 @@
     <section id="contact-us" class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
       <h5 class="text-uppercase mb-4 fw-bold text-success">Contact</h5>
          <p class="text-success"><i class="bi bi-globe text-success"></i> Port Harcourt, Nigeria</p>
-         <p class="text-success"><i class="bi bi-envelope text-success"></i> support@africagallery.com</p>
+         <p class="text-success"><i class="bi bi-envelope text-success"></i> support@photonaija.com</p>
          <p class="text-success"><i class="bi bi-phone text-success"></i> +234 800 123 4567</p>
       </section>
 
@@ -10817,7 +12258,7 @@
         </div>
 
         <!-- Copyright -->
-        <hr class="text-black fw-bold" />
+        <hr class="text-black fw-bold">
         <div class="row mt-4">
           <div class="col-md-12 text-center">
             <p class="text-success">Copyright © 2025 <span class="fw-bold text-black">Photonaija<i class="bi bi-camera text-success fw-bold"></i></span>. All rights reserved.</p>
